@@ -1,0 +1,6 @@
+{
+  "name": "World Family Bingo",
+  "description": "Multilingual live Bingo host console, synchronized smartphone remote, and 16:9 beamer display for World Family Bar in Fisterra.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

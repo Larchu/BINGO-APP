@@ -1,0 +1,48 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-display: var(--font-display), Georgia, serif;
+  --font-sans: var(--font-sans), system-ui, sans-serif;
+  --font-mono: var(--font-mono), monospace;
+}
+
+@layer utilities {
+  .font-display {
+    font-family: var(--font-display), Georgia, serif;
+  }
+
+  .gold-gradient-text {
+    background: linear-gradient(
+      180deg,
+      #d8ad42 0%,
+      #b6851b 45%,
+      #8e620d 72%,
+      #c89b2f 100%
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  .gold-metallic-border {
+    border-color: #c9a13f;
+  }
+
+  .gold-hairline {
+    border-color: rgba(184, 134, 11, 0.28);
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
